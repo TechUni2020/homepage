@@ -1,0 +1,11 @@
+@mixin fluid-type($min-font-size: 12px, $max-font-size: 21px, $lower-range: 600px, $upper-range: 1264px) {
+
+  @media screen and (max-width: $lower-range) {
+    font-size: $min-font-size;
+  }
+
+  @media screen and (min-width: $upper-range) {
+    font-size: $max-font-size;
+  }
+}
+

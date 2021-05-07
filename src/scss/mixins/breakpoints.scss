@@ -1,0 +1,13 @@
+// https://vuetifyjs.com/ja/customization/breakpoints
+$breakpoints: (
+        mobile: (max-width: 600px), //small to large handset
+        smallTablet: (max-width: 960px), //small to medium tablet
+        laptop: (max-width: 1264px), //large tablet to laptop
+        desktop: (max-width: 1904px) //desktop
+);
+
+@mixin respondTo($breakpoint) {
+  @media #{inspect(map-get($breakpoints, $breakpoint))} {
+    @content;
+  }
+}

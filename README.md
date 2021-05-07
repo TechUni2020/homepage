@@ -1,21 +1,23 @@
-# Tech.Uni のホームページ
+# TechUni website
 
 ## Project setup
+
 ```
-yarn install
+npm install
 ```
 
-### Compiles and hot-reloads for development
+# Requirement
+
+Vue cli 2.6.11
+
+# Compiles and hot-reloads for development
+
 ```
-yarn serve
+npm run serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+# Compiles and minifies for production
 
-### Lints and fixes files
 ```
-yarn lint
+npm run build
 ```
