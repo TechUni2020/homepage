@@ -1,0 +1,28 @@
+@import "~@/scss/settings/theme";
+@import "~@/scss/mixins/fluid-type";
+
+html {
+  font-family: "游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: theme(background);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+//fluid-type (min fontsize, max fontsize)
+p {
+  @include fluid-type(14px, 16px);
+  line-height: 2em;
+}
+
+h1 {
+  @include fluid-type(25px, 36px);
+}
+
+h2 {
+  @include fluid-type(25px, 28px);
+}

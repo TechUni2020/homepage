@@ -1,0 +1,14 @@
+$_theme: (
+        background:#061c26,
+        primary: #f6f9fe,
+        secondary:#063743,
+        title:#2fc0be,
+        text: #090909,
+        border_primary: #dddddd,
+        border_secondary: #dddddd,
+);
+
+@function theme($name, $alpha: 1.0) {
+  $color: map_get($_theme, $name);
+  @return rgba($color, $alpha);
+}
