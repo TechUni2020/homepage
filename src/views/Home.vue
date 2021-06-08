@@ -1,6 +1,6 @@
 <template>
   <page-template
-    :background="require('@/assets/home/home.jpg')"
+    :background="require('@/assets/home/home3.jpg')"
     :title-height="height"
   >
     <template v-slot:title>
