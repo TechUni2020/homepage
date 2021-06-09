@@ -72,6 +72,7 @@ export default class PageTemplate extends Vue {
       background: `linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(${this.background}) 50%`,
       "background-size": "cover",
       "background-repeat": "no-repeat",
+      "background-attachment": "fixed",
     };
   }
 }
