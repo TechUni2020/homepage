@@ -1,26 +1,3 @@
-# TechUni website
-
-## Project setup
-
-```
-npm install
-```
-
-# Requirement
-
-Vue cli 2.6.11
-
-# Compiles and hot-reloads for development
-
-```
-npm run serve
-```
-
-# Compiles and minifies for production
-
-```
-npm run build
-```
 # Tech.Uni website
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
@@ -131,7 +108,7 @@ Thanks goes to these wonderful people
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://twitter.com/tayzar133"><img src="https://avatars.githubusercontent.com/u/62434815?v=4" width="100px;" alt=""/><br /><sub><b>テザー ナイ ウィン</b></sub></a><br /><a href="https://github.com/TechUni2020/Tech.Uni_Members/commits?author=
+    <td align="center"><a href="https://twitter.com/tayzar133"><img src="https://avatars.githubusercontent.com/u/62434815?v=4" width="100px;" alt=""/><br /><sub><b>テザー ナイ ウィン</b></sub></a><br /><a href="https://github.com/TechUni2020/homepage/commits?author=
 tayzar-v98" title="Documentation">📖</a> <a href="#projectManagement-
 tayzar-v98" title="Project Management">📆</a>
 </table>
