@@ -1,18 +1,18 @@
 <template>
   <nav>
     <hamburger-button
-      class="hamburger-button"
-      :is-active="buttonActive"
-      @toggle="toggleButton"
+        class="hamburger-button"
+        :is-active="buttonActive"
+        @toggle="toggleButton"
     >
     </hamburger-button>
 
     <ul class="nav-list" :class="toggleMenu">
       <li
-        v-for="(navi, index) in navigation"
-        :key="index"
-        class="nav-list__item"
-        @click="toggleMnu"
+          v-for="(navi, index) in navigation"
+          :key="index"
+          class="nav-list__item"
+          @click="toggleMnu"
       >
         <router-link :to="navi.to">
           {{ navi.title }}
@@ -23,13 +23,13 @@
 </template>
 
 <script lang="ts">
-import { Component } from "vue-property-decorator";
+import {Component} from "vue-property-decorator";
 import HamburgerButton from "@/components/menubar/HamburgerButton.vue";
-import { Mixins } from "vue-mixin-decorator";
-import { Responsive } from "@/mixins/Responsive";
+import {Mixins} from "vue-mixin-decorator";
+import {Responsive} from "@/mixins/Responsive";
 
 @Component({
-  components: { HamburgerButton },
+  components: {HamburgerButton},
 })
 export default class NavigationMenu extends Mixins<Responsive>(Responsive) {
   public buttonActive = false;
@@ -39,10 +39,10 @@ export default class NavigationMenu extends Mixins<Responsive>(Responsive) {
       title: "イベント",
       to: "/hackathon",
     },
-    // {
-    //   title: "ブログ",
-    //   to: "/blog",
-    // },
+    {
+      title: "ブログ",
+      to: "/blog",
+    },
     {
       title: "私たちについて",
       to: "/about",
@@ -59,8 +59,8 @@ export default class NavigationMenu extends Mixins<Responsive>(Responsive) {
 
   public toggleMnu() {
     this.buttonActive = this.lessThanSm()
-      ? !this.buttonActive
-      : this.buttonActive;
+        ? !this.buttonActive
+        : this.buttonActive;
   }
 
   public get toggleMenu() {

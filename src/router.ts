@@ -36,7 +36,7 @@ const router = new Router({
       //     {
       //         queriedCategory: route.query.categories,
       //         queriedPageNumber: route.query.page
-      //     }
+      //   }
       // ),
     },
     {
