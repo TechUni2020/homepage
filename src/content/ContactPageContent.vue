@@ -23,7 +23,7 @@ export default class ContactPageContent extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-@import "~@/scss/global";
+@import "@/scss/global";
 
 .container {
   padding-top: 30px;

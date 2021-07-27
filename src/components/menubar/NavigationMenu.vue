@@ -74,7 +74,7 @@ export default class NavigationMenu extends Mixins<Responsive>(Responsive) {
 </script>
 
 <style lang="scss" scoped>
-@import "~@/scss/global";
+@import "@/scss/global";
 
 .hamburger-button {
   display: none;

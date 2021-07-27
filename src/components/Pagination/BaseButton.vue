@@ -15,7 +15,7 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "~@/scss/global";
+    @import "@/scss/global";
 
     .button {
         background-color: rgba(0, 0, 0, 0);

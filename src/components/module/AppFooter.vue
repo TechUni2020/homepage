@@ -12,7 +12,7 @@ export default class AppFooter extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-@import "~@/scss/global";
+@import "@/scss/global";
 
 footer {
   color: theme(primary);

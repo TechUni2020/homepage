@@ -7,11 +7,11 @@ import {Category, SerializedCategory} from "@/store/Notice/types/Category";
 Vue.use(Vuex);
 
 const client = axios.create({
-    baseURL: process.env.VUE_APP_WORD_PRESS_API_URL,
+    baseURL: import.meta.env.VITE_APP_WORD_PRESS_API_URL,
     headers: {
         'Content-Type': 'application/json',
     },
-    timeout:10000,
+    timeout: 10000,
 });
 
 export const store = new Vuex.Store({

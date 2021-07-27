@@ -37,7 +37,7 @@ export default class HomePageContent extends Mixins<Responsive>(Responsive) {}
 </script>
 
 <style lang="scss" scoped>
-@import "~@/scss/global";
+@import "@/scss/global";
 
 .event {
   width: 100%;
@@ -54,14 +54,14 @@ export default class HomePageContent extends Mixins<Responsive>(Responsive) {}
     align-items: center;
     justify-content: center;
 
-    background: url(~@/assets/home/home2.jpg);
+    background: url(@/assets/home/home2.jpg);
     // linear-gradient(rgba(#13bf75, 0.7), rgba(#2fc0be, 0.7))
     background-size: cover;
     background-repeat: no-repeat;
 
     h1 {
       height: 1.5em;
-      background-image: url(~@/assets/line-white.svg);
+      background-image: url(@/assets/line-white.svg);
       background-repeat: no-repeat;
       background-position: bottom;
     }
@@ -83,7 +83,7 @@ export default class HomePageContent extends Mixins<Responsive>(Responsive) {}
     height: 2.5em;
     font-weight: bold;
     color: theme(title) !important;
-    // background-image: url(~@/assets/line-green.svg);
+    // background-image: url(@/assets/line-green.svg);
     background-repeat: no-repeat;
     background-position: bottom;
   }

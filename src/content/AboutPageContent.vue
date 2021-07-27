@@ -93,8 +93,8 @@ export default class AboutPageContent extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-@import "~@/scss/global";
-@import "~@/scss/module/table";
+@import "@/scss/global";
+@import "@/scss/module/table";
 
 %base-wrapper {
   display: flex;
@@ -128,7 +128,7 @@ export default class AboutPageContent extends Vue {}
     font-weight: 300;
     color: theme(title);
     text-align: center;
-    background-image: url(~@/assets/line-green.svg);
+    background-image: url(@/assets/line-green.svg);
     background-repeat: no-repeat;
     background-position: bottom;
   }
@@ -153,7 +153,7 @@ export default class AboutPageContent extends Vue {}
     &--inner {
       width: 5000px;
       height: 400px;
-      background-image: url(~@/assets/about/gallery.jpg);
+      background-image: url(@/assets/about/gallery.jpg);
       background-repeat: repeat-x;
       animation: infinitescroll 30s linear infinite;
 

@@ -78,7 +78,7 @@ export default class PageTemplate extends Vue {
 </script>
 
 <style lang="scss" scoped>
-@import "~@/scss/global";
+@import "@/scss/global";
 
 .page-title {
   display: flex;
@@ -103,7 +103,7 @@ export default class PageTemplate extends Vue {
 
   &__title {
     height: 2em;
-    background-image: url(~@/assets/line-white.svg);
+    background-image: url(@/assets/line-white.svg);
     background-repeat: no-repeat;
     background-position: bottom;
   }

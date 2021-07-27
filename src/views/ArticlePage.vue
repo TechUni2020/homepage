@@ -131,7 +131,7 @@ export default class ArticlePage extends Mixins<Responsive>(Responsive) {
 </script>
 
 <style lang="scss" scoped>
-@import "~@/scss/global";
+@import "@/scss/global";
 
 .container {
   background: theme(primary);
@@ -182,7 +182,7 @@ export default class ArticlePage extends Mixins<Responsive>(Responsive) {
   }
 }
 
-/deep/ img {
+::v-deep img {
   max-width: 100% !important;
   display: block;
   margin: auto;

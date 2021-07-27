@@ -7,7 +7,6 @@ Vue.use(Router);
 
 const router = new Router({
   mode: "history",
-  base: process.env.BASE_URL,
   routes: [
     {
       path: "/",
@@ -32,12 +31,6 @@ const router = new Router({
       meta: {
         title: "ブログ",
       },
-      // props: (route) => (
-      //     {
-      //         queriedCategory: route.query.categories,
-      //         queriedPageNumber: route.query.page
-      //   }
-      // ),
     },
     {
       path: "/blog/:id",
@@ -75,6 +68,7 @@ const router = new Router({
 });
 
 router.afterEach((to: Route, from: Route) => {
+  // @ts-ignore
   if (to.meta.noScroll && from.meta.noScroll) {
     // 遷移先・遷移元の両方がスクロール不要な時のみスクロールしない
     return;

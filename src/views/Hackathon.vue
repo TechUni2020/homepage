@@ -42,5 +42,5 @@ export default class Hackathon extends Mixins<Responsive>(Responsive) {
 </script>
 
 <style lang="scss" scoped>
-@import "~@/scss/global";
+@import "@/scss/global";
 </style>
