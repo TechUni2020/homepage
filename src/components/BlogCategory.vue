@@ -37,8 +37,8 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "~@/scss/mixins/breakpoints";
-    @import "~@/scss/settings/theme";
+    @import "@/scss/mixins/breakpoints";
+    @import "@/scss/settings/theme";
     .categories {
         margin-top: 50px;
         line-height: 2em;

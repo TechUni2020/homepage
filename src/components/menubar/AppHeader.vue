@@ -48,7 +48,7 @@ export default class AppHeader extends Vue {
 </script>
 
 <style lang="scss" scoped>
-@import "~@/scss/global";
+@import "@/scss/global";
 
 .header {
   position: fixed;

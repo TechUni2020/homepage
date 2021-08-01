@@ -151,7 +151,7 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "~@/scss/global";
+    @import "@/scss/global";
 
     .pagination {
         margin-top: 32px;

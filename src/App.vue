@@ -23,13 +23,13 @@
 </script>
 
 <style lang="scss">
-    @import "~@/scss/base/reset";
-    @import "~@/scss/base/base";
+    @import "@/scss/base/reset";
+    @import "@/scss/base/base";
 
 </style>
 
 <style lang="scss" scoped>
-    @import "~@/scss/global";
+    @import "@/scss/global";
 
     #page {
         width: 100%;

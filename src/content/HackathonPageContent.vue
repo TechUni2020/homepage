@@ -20,8 +20,8 @@ export default class HackathonPageContent extends Vue {
 </script>
 
 <style lang="scss" scoped>
-@import "~@/scss/global";
-@import "~@/scss/module/table";
+@import "@/scss/global";
+@import "@/scss/module/table";
 
 %base-wrapper {
   padding: 50px;
@@ -203,7 +203,7 @@ export default class HackathonPageContent extends Vue {
     }
   }
 
-  /deep/ h1 {
+  ::v-deep h1 {
     @include respondTo(mobile) {
       font-size: 15px;
     }

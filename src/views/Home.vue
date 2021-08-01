@@ -6,7 +6,7 @@
     <template v-slot:title>
       <headline
         title="Tech.Uni"
-        description=" 関西学院大学「プログラミング研究会」"
+        description="関西学院大学「プログラミング研究会」"
       >
       </headline>
     </template>
@@ -40,5 +40,5 @@ export default class Home extends Mixins<Responsive>(Responsive) {
 </script>
 
 <style lang="scss" scoped>
-@import "~@/scss/global";
+@import "@/scss/global";
 </style>
