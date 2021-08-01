@@ -2,10 +2,10 @@ name: Deploy via git-ftp
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 jobs:
   deploy:
     name: Deploy
