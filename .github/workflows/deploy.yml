@@ -1,4 +1,5 @@
 name: Deploy via git-ftp
+on: push
 jobs:
   deploy:
     name: Deploy
