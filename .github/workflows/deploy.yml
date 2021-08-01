@@ -1,0 +1,25 @@
+name: Deploy via git-ftp
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+      - name: 🏗 Build code
+        run: yarn && yarn build
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@2.0.0
+        env:
+          FTP_SERVER: ${{ secrets.FTP_HOST }}
+          FTP_USERNAME: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASS }}
+          LOCAL_DIR: dist
+          REMOTE_DIR: /public_html
