@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      - master
 jobs:
   deploy:
     name: Deploy
@@ -22,4 +19,4 @@ jobs:
           FTP_USERNAME: ${{ secrets.FTP_USER }}
           FTP_PASSWORD: ${{ secrets.FTP_PASS }}
           LOCAL_DIR: dist
-          REMOTE_DIR: /public_html
+          REMOTE_DIR: /
